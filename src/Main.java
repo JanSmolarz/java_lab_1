@@ -26,8 +26,8 @@ public class Main {
         System.out.print("Podaj numer indeksu: ");
         String nri = scan.next();
 
-        System.out.printf("Masz na imię %s a na nazwisko %s.\n", imie, nazwisko);
-        System.out.println("Twój wiek wynosi "+ wiek + " lat a twój numer indeksu to: "+ nri);
+        System.out.printf("Masz na imię %s a na nazwisko %s i masz %d lat.\n", imie, nazwisko, wiek);
+        System.out.println("Twój numer indeksu to: "+ nri);
 
 
 
@@ -35,6 +35,28 @@ public class Main {
         /*  zad.2 zadeklarować 2 zmienne typu int i wykonać na nich obliczenia arytmetyczn (+, -, *, /, %)
         *   wynik wyświetlić w konsoli programu
         */
+        System.out.print("Podaj pierwszą liczbę: ");
+        int l1 = scan.nextInt();
+        System.out.print("Podaj drugą liczbę: ");
+        int l2 = scan.nextInt();
+
+        int w1 = l1+l2;
+        System.out.printf("%d + %d = %d \n",l1, l2, w1);
+
+        int w2 = l1-l2;
+        System.out.printf("%d - %d = %d\n",l1, l2, w2);
+
+        int w3 = l1*l2;
+        System.out.printf("%d * %d = %d\n",l1, l2, w3);
+
+        int w4 = l1/l2;
+        System.out.printf("%d / %d = %d\n",l1, l2, w4);
+
+        int w5 = l1%l2;
+        /*System.out.printf("%d % %d = %d\n",l1, l2, w5); //problem ze znakiem % w printf */
+        System.out.println(l1 +" % "+ l2 +" =" + w5);
+
+
 
     }
 }
