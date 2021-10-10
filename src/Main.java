@@ -11,5 +11,10 @@ public class Main {
         System.out.print("To jest jakiś");
         System.out.print(" tekst");
         System.out.print(" nie za długi.");
+
+        System.out.println("Lubię placki!");
+        System.out.println("Test");
+        System.out.println("L");
+        System.out.println("sout to skrót od System.out.println");
     }
 }
