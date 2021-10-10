@@ -64,6 +64,5 @@ public class Main {
         System.out.println(liczbaX+" % "+liczbaY+" = "+wynik10);
 
 
-
     }
 }
