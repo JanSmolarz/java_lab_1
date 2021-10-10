@@ -12,6 +12,25 @@ public class Main {
         *   b) wyświetlić dane za pomocą println i printf
         */
 
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Podaj imię: ");
+        String imie = scan.next();
+
+        System.out.print("Podaj nazwisko: ");
+        String nazwisko = scan.next();
+
+        System.out.print("Podaj wiek: ");
+        int wiek = scan.nextInt();
+
+        System.out.print("Podaj numer indeksu: ");
+        String nri = scan.next();
+
+        System.out.printf("Masz na imię %s a na nazwisko %s.\n", imie, nazwisko);
+        System.out.println("Twój wiek wynosi "+ wiek + " lat a twój numer indeksu to: "+ nri);
+
+
+
 
         /*  zad.2 zadeklarować 2 zmienne typu int i wykonać na nich obliczenia arytmetyczn (+, -, *, /, %)
         *   wynik wyświetlić w konsoli programu
