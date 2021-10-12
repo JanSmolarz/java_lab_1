@@ -8,5 +8,15 @@ public class Main {
         boolean a = false;
         boolean b = true;
         boolean c = false;
+        int x = 7;
+        int y = 5;
+        int z = 5;
+
+        System.out.println(a && b);
+        System.out.println(a || c);
+        System.out.println(!b);
+        System.out.println(x == y);
+        System.out.println(y == z);
+        System.out.println(x > y);
     }
 }
