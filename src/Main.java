@@ -18,5 +18,7 @@ public class Main {
         System.out.println(x == y);
         System.out.println(y == z);
         System.out.println(x > y);
+        System.out.println((!a && c) || (!a || b));
+        System.out.println((y == z) && (x < y));
     }
 }
