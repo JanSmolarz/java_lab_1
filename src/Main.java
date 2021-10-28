@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -25,11 +26,30 @@ public class Main {
         System.out.println("Podaj swój numer albumu: ");
         int indeks = scan.nextInt();
         int dzielnik = 2;
-
+        int czyParzysty = (indeks % 2 == 1) ? 0 : 1 ;
+        System.out.println("Czy parzysty : " + czyParzysty);
 
 
         /* zad.3 wpisz z klawiatury liczbę zmiennoprzecinkową (użyj klasy Scanner z poprzednich ćwiczeń)
          * i stwórz konstrukcję else if z dowolnymi komunikatami */
+        System.out.println("Wypisz swój wzrost: ");
+        double wzrost= scan.nextDouble();
+
+        if (wzrost < 153) {
+            System.out.println("Wzrost karłowaty");
+        } else if (wzrost < 163) {
+            System.out.println("Wzrost niski");
+        }else if (wzrost < 173) {
+            System.out.println("Wzrost średni");
+        }else if (wzrost < 178) {
+        System.out.println("Wzrost wysoki");
+        }else if (178 < wzrost) {
+            System.out.println("Wzrost bardzo wysoki");
+        }
+
+
+
+
 
     }
 }
