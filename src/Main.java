@@ -26,24 +26,29 @@ public class Main {
         System.out.println("Podaj swój numer albumu: ");
         int indeks = scan.nextInt();
         int dzielnik = 2;
-        int czyParzysty = (indeks % 2 == 1) ? 0 : 1 ;
-        System.out.println("Czy parzysty : " + czyParzysty);
+        if (indeks == 0){
+            System.out.println("Zero nie należy do zbioru");
+        }
+        else {
+            int czyParzysty = (indeks % 2 == 1) ? 0 : 1;
 
+            System.out.println("Czy parzysty : " + czyParzysty);
+        }
 
         /* zad.3 wpisz z klawiatury liczbę zmiennoprzecinkową (użyj klasy Scanner z poprzednich ćwiczeń)
          * i stwórz konstrukcję else if z dowolnymi komunikatami */
         System.out.println("Wypisz swój wzrost: ");
         double wzrost= scan.nextDouble();
 
-        if (wzrost < 153) {
+        if (wzrost <= 153) {
             System.out.println("Wzrost karłowaty");
-        } else if (wzrost < 163) {
+        } else if (wzrost > 153 & wzrost <= 163) {
             System.out.println("Wzrost niski");
-        }else if (wzrost < 173) {
+        }else if (wzrost > 163 & wzrost <= 173) {
             System.out.println("Wzrost średni");
-        }else if (wzrost < 178) {
+        }else if (wzrost > 173 & wzrost <= 177) {
         System.out.println("Wzrost wysoki");
-        }else if (178 < wzrost) {
+        }else if (177 < wzrost) {
             System.out.println("Wzrost bardzo wysoki");
         }
 
